@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>ICHS Training Page 5</title>
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+			<link href="css/page5astyles.css" rel="stylesheet">
+	
+	
+	<style>
+	
+		details > summary {
+ 			 padding: 0px;
+ 			 width: 100%;
+			 background-color: #CF3339;
+ 			 border: none;
+  			 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  			 cursor: pointer;
+			}
+
+		details > p {
+			 background-color: #eeeeee;
+			 padding-left: 5px;
+			 padding-right: 5px;
+ 			 margin: 0;
+			 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+		#logo {
+			align:left;
+			border-radius:8px 8px 8px 8px;
+			border-style:solid;
+			border-color:#002d6E; 
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		
+	</style>
+</head>
+
+<body>
+		
+	<div class="headbar">	
+		
+		<div class="left1" style="padding:20px">
+			
+			<img id="logo" src="img/ICHSlogo.PNG" alt="ICHS logo" width="234" height="84" align="left" />
+			
+		</div>
+		
+		<div class="right1">
+			<div class="h1">
+				<br>
+				<h1>Indiana County Humane Society Employee Training </h1> 
+			</div>
+		
+		</div>
+		
+	</div>
+	<div>
+		
+		<nav class="topNav">
+        	<ul id="topNav">
+            	<li><a href="index.html">Home</a></li>
+				<li><a href="page5.html">Shelter Layout</a></li>              	
+				<li><a href="page1.html">Kennel Cleaning Overview</a></li>
+				<li><a href="page2.html">Kennel Cleaning Video</a></li>
+           		<li><a href="page3.html">Daily Morning Routine</a></li>
+				<li><a href="page4.html">Training Practice Quiz</a></li>
+       		</ul>
+    	</nav>
+	</div>	
+	
+<div id="wrapper">	
+	
+	<div id="header">	
+		
+		<div class="h1a">
+			<h1>Explore the Layout of the ICHS Shelter </h1> 
+		</div>
+		
+	</div>
+
+ 	 <div id="step1">
+		 
+			<details open>
+					<summary class="stepTitle"> 
+						<span class="material-icons">pets</span> 
+						<strong> Hot Spot Map Layout </strong> 
+					</summary>
+
+				<p>
+					<div class="stepContent1">
+
+						<div class="stepDescription1">
+							<p>Before you begin reviewing the training modules it would be helpful to get acclimated with the shelter environment.  Review the layout below and click on the circles to view the different rooms at the shelter.  This will help you understand where supplies are located and where certain tasks take place.</p>  
+							
+							<div id="shelterlayout" class="imagehotspot-container" style="position: relative; max-width: 258px; width: 100%; height: auto; z-index: 101;">
+    							<div style="position: relative;">
+									
+       								 <img src="img/shelterlayouthotspot.PNG" alt="Shelter layout." align="center" width="732px" height="923px" style="top: 0px; left: 0px; z-index: 102" />
+									
+       									<div id="ihotspot1" class="ihotspot" style="position: absolute; z-index: 103; width: 3.875%; height: 4.484%; top: 62.78%; left: 21.3178%;">
+       									</div>
+									
+       									<div id="ihotspot2" class="ihotspot" style="position: absolute; z-index: 103; width: 3.875%; height: 4.484%; top: 5.829%; left: 50.3875%;">
+        								</div>
+									
+        								<div id="ihotspot3" class="ihotspot" style="position: absolute; z-index: 103; width: 3.875%; height: 4.484%; top: 44.843%; left: 89.922%;">
+       									</div>
+    							</div>
+							</div>
+
+							
+						</div>	
+					</div><!--stepContent-->
+		 		</p> 
+		 </details>
+	</div><!--step1-->
+			
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".ihotspot").css({
+            "border": "solid 1px #009900",
+            "background": "#00ffcc",
+            "border-radius": "6px"
+        });
+ 
+        function blink_hotspot() {
+            $('.ihotspot').animate({ "opacity": '0.3' }, 'slow').animate({ 'opacity': '0.8' }, 'fast', function () { blink_hotspot(); });
+        }
+ 
+        blink_hotspot();
+    });
+ 
+    $('#ihotspot1').LiteTooltip({
+        location: 'right',
+        textalign: 'left',
+        templatename: 'Limeade',
+        padding: 5,
+        title:
+        '<div class="template">' +
+        '<h4>ICHS Shelter Entrance</h4>' +
+        '<p style="padding: 5px; font-size: 11px; line-height: 18px;">' + 
+        '<img src="img/entrance.PNG" style="width: 65px; margin-right: 10px" class="image-left" />' +
+        'This is the front entrance to the shelter when you walk in you will be in the lobby facing the front desk reception area.' +
+        '</p>' +
+        '</div>'
+    });
+ 
+    $('#ihotspot2').LiteTooltip({
+        location: 'right',
+        textalign: 'left',
+        templatename: 'BostonBlue',
+        padding: 5,
+        title:
+        '<div class="template">' +
+        '<h4>Dog Kennels</h4>' +
+        '<p style="padding: 5px; font-size: 11px; line-height: 18px;">' +
+        '<img src="img/dogkennelfront.JPG" style="width: 65px; margin-right: 5px" class="image-left" /></li>' +
+        'When you walk into the dog kennel from the main hallway this is the first row of kennels.' +
+        '</p>' +
+        '</div>'
+    });
+ 
+    $('#ihotspot3').LiteTooltip({
+        location: 'right',
+        textalign: 'left',
+        templatename: 'PaleMint',
+        padding: 5,
+        title:
+        '<div class="template">' +
+        '<h4>Dog Kennels</h4>' +
+        '<p style="padding: 5px; font-size: 11px; line-height: 20px;">' +
+		'<img src="img/dogkennelback.JPG" style="width: 65px; margin-right: 5px" class="image-left" /></li>' +
+        'This is the back row of dog kennels, closest to the door to the outside kennels.' +
+        '</p>' +
+        '</div>'
+    });
+
+</script>
+	
+<br />
+		
+</div><!--wrapper-->
+
+	<footer style="text-align: center">
+		<div id="footer">
+	  		<p>Website designed by: Sarah Ricks</p>
+			<p>California State University Monterey Bay </p>
+			<p>Master's of Instructional Science and Technology</p> 
+			<p>Course IST 541 - Fall 2022</p>
+				  
+			<a href="#top" style="color:#D7EBF0">Top of Page</a>
+			<br />
+			
+		</div>
+	</footer>
+
+</body>
+</html>
+

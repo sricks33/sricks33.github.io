@@ -80,7 +80,7 @@
 	</div>
 
  	 <div id="step1">
-		 
+		 <div id="feedback"></div>
 			<details open>
 					<summary class="stepTitle"> 
 						<span class="material-icons">pets</span> 
@@ -88,19 +88,43 @@
 					</summary>
 
 				<p>
-					<div class="stepContent">
+					<div class="stepContent1">
 
-						<div class="stepDescription">
+						<div class="stepDescription1">
 							<p>Before you begin reviewing the training modules it would be helpful to get acclimated with the shelter environment.  Review the layout below and click on the circles to view the different rooms at the shelter.  This will help you understand where supplies are located and where certain tasks take place.</p>  
+							
+							<ul>
+								<li style="padding-bottom:.5em"> Front Entrance</li>
+								<li style="padding-bottom:.5em"> Adoption Room </li>
+								<li style="padding-bottom:.5em"> Breakroom </li>
+								<li style="padding-bottom:.5em"> Hall </li>
+								<li style="padding-bottom:.5em"> Cat Room </li>
+								<li style="padding-bottom:.5em"> Laundry Room Entrance </li>
+								<li style="padding-bottom:.5em"> Washing Station </li>
+								<li style="padding-bottom:.5em"> Dog Isolation Kennel </li>
+								<li style="padding-bottom:.5em"> Front Row of Dog Kennels</li>
+								<li style="padding-bottom:.5em"> Back Row of Dog Kennels</li>
+								<li style="padding-bottom:.5em"> Outdoor Dog Kennels on Left</li>
+								<li style="padding-bottom:.5em"> Outdoor Dog Kennels on Right</li>
+							</ul>
+							
 						</div>
-		
 						<div class="stepImage">
-							<img src="img/shelterlayouthotspot.PNG"  alt="Shelter layout." width="100%" style="border-radius: 5px 5px 0px 0px" usemap="#Map"/>
+							<img src="img/shelterlayouthotspot1.PNG"  alt="Shelter layout." align="center" width="732px" height="923px" style="border-radius: 5px 5px 0px 0px" usemap="#Map"/>
 							
 								<map name="Map">
-   									<area shape="circle" coords="325,897,10" alt="entrance" href="https://sricks33.github.io/lab6/entrance.html">
-  									<area shape="circle" coords="306,361,10" alt="dogkennelfront" href="https://sricks33.github.io/lab6/entrance.html">
-    								<area shape="circle" coords="304,293,10" alt="dogkennelback" href="https://sricks33.github.io/lab6/entrance.html">
+   									<area shape="circle" coords="325,889,20" alt="Entrance" href="" title="ICHS Front Entrance" onclick="myFunction1()">
+  									<area shape="circle" coords="144,846,20" alt="Adoption Room" href="" title="Adoption Room" onclick="myFunction2()">
+									<area shape="circle" coords="567,843,20" alt="Breakroom" href="" title="Breakroom" onclick="myFunction3()">
+									<area shape="circle" coords="181,675,20" alt="Hall" href="" title="Hall to Laundry and Storage Room" onclick="myFunction4()">
+									<area shape="circle" coords="238,501,20" alt="Cat Room" href="" title="Cat Room" onclick="myFunction5()">
+									<area shape="circle" coords="183,652,20" alt="Laundry and Storage Room Entry" href="" title="Laundry and Storage Room Entry" onclick="myFunction6()">
+									<area shape="circle" coords="130,296,20" alt="Washing Station" href="" title="Washing Station" onclick="myFunction7()">
+									<area shape="circle" coords="56,282,20" alt="Dog Kennel Isolation Room" href="" title="Dog Kennel Isolation Room" onclick="myFunction8()">
+									<area shape="circle" coords="306,352,20" alt="dog kennel back" href="" title="Front Row Dog Kennels" onclick="myFunction9()">
+    								<area shape="circle" coords="304,283,20" alt="dog kennel back" href="" title="Back Row Dog Kennels" onclick="myFunction10()">
+									<area shape="circle" coords="250,186,20" alt="Outdoor Kennels on the Left" href="" title="Outdoor Kennels on the Left" onclick="myFunction11()">
+									<area shape="circle" coords="352,186,20" alt="Outdoor Kennels on the Right" href="" title="Outdoor Kennels on the Right" onclick="myFunction12()">
 								</map>
 							
 						</div>	
@@ -109,6 +133,65 @@
 		 </details>
 	</div><!--step1-->
 			
+<script>
+	function myFunction1() {
+  		alert("This is the front entrance to the shelter when you walk in you will be in the lobby facing the front desk reception area.");
+		
+		}
+
+	function myFunction2() {
+  		alert("From the Lobby if you take a left you will see the Adoption Room on the left hand side.");
+	
+		}
+	
+	function myFunction3() {
+  		alert("From the Lobby if you take a right down to the end of the hall you will see the employee Breakroom on the right hand side.");
+	
+		}
+	
+	function myFunction4() {
+  		alert("From the Lobby if you take a right and then go down the far hallway on the right it leads to the Cat Rooms, Cat Isolation Rooms, and Vet Room");
+	
+		}
+	
+	function myFunction5() {
+  		alert("If you go down the left Hall, the second door on the right leads to the Cat Room.");
+	
+		}
+	function myFunction6() {
+  		alert("If you walk through the door at the end of the Hall it leads to the Laundry and Storage Room Entrance.");
+	
+		}
+	function myFunction7() {
+  		alert("On the right hand side of the Laundry and Storage Room is the Washing Station with washers and dryers for doing laundry.");
+	
+		}
+	function myFunction8() {
+  		alert("From the laundry room if you go through the back left door it takes you to the Dog Kennel Isolation Room for sick or injuried dogs.");
+	
+		}
+	
+	function myFunction9() {
+  		alert("When you walk into the dog kennel from the main hallway this is the first row of kennels.");
+	
+		}
+				  
+	function myFunction10() {
+  		alert("This is the back row of dog kennels, closest to the door to the outside kennels.");
+		
+		}
+
+	function myFunction11() {
+  		alert("Once you walk out the backdoor in the Dog Kennel room there are Outdoor Dog Kennels on the left hand side");
+	
+		}
+	
+	function myFunction12() {
+  		alert("Once you walk out the backdoor in the Dog Kennel room there are Outdoor Dog Kennels on the right hand side");
+		
+		}
+	
+</script>
 <br />
 		
 </div><!--wrapper-->
